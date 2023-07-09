@@ -1,14 +1,13 @@
 var timerCount = document.getElementsByClassName("start-button")
 
-function countdown() {
-    var timeAmount = 80;
+var timeAmount = 80;
 
+function countdown() {
     var timeInterval = setInterval(function() {
-        if (timeAmount > 1) {
-            
-            timerCount = timeAmount;
-            
-            timeAmount--;
+        timeAmount--;
+        timerCount = timeAmount;
+        if(timeAmount === 0) {
+            clearInterval(timeInterval);
         }
     })
 }
