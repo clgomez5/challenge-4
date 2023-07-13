@@ -9,15 +9,24 @@
 </head>
 
 <body>
-    <nav onclick="window.location.href = 'index-quiz.html';">View high scores</nav>
+    <nav>
+        <a onclick="window.location.href = 'index-quiz.html';">View high scores</a>
+        <div class="timer">Time: <span id="time">0</span></div>  
+    </nav>
+    <div id="start-screen">
     <h1>Coding Quiz Challenge</h1>
     <p>Try to answer the following code-related questions within in the time limit.
         Incorrect answers will penalize your score.</p>
     <div class="start-button">
-        <button>Start Quiz</button>
+        <button id="start-btn" class="start-btn btn">Start Quiz</button>
     </div>
-
-
+</div>
+<div class="container">
+<div id="question-container" class="hide">
+    <h2 id="question-title">Question</h2>
+    <div id="choices" class="choices">Answers</div>
+</div>
+</div>
     <script src="Assets/script.js"></script>
 </body>
 

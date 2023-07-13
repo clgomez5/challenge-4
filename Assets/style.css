@@ -22,3 +22,7 @@ nav:hover {
     cursor: pointer;
     color: rgb(40, 40, 163);
 }
+
+.hide {
+    display: none;
+}
